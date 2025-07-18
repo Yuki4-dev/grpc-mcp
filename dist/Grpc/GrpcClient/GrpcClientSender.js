@@ -5,7 +5,7 @@ import { isErrorStatusObject, toGrpcStatusCode } from "../ProtocolBuffer/Protoco
 import { protoLoader } from "../ProtocolBuffer/ProtoLoader.js";
 import { grpcClientFactory } from "./GrpcClientFactory.js";
 const MAX_SEND_REQUEST_TIMEOUT = 180 * 1000;
-class GrpcCleintSender {
+class GrpcClientSender {
     protoLoader;
     grpcClientFactory;
     runTokenSourceList = [];
@@ -141,4 +141,4 @@ class GrpcCleintSender {
         return tokenSource;
     }
 }
-export const grpcClientSender = new GrpcCleintSender(protoLoader, grpcClientFactory);
+export const grpcClientSender = new GrpcClientSender(protoLoader, grpcClientFactory);

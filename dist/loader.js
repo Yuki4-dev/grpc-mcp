@@ -7,12 +7,10 @@ export const loader = {
         for (const p of proto) {
             const services = [];
             for (const s of p.protocolBuffer.services) {
-                for (const method of s.methods) {
-                    services.push({
-                        name: s.name,
-                        method: method.name,
-                    });
-                }
+                services.push({
+                    name: s.name,
+                    methods: s.methods.map(m => m.name),
+                });
             }
             result.push({
                 path: p.protocolBuffer.metadata.protoPath,

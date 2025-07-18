@@ -8,12 +8,12 @@ import { grpcClientFactory, IGrpcClientFactory } from "./GrpcClientFactory.js";
 
 const MAX_SEND_REQUEST_TIMEOUT = 180 * 1000;
 
-export interface IGrpcCleintSender {
+export interface IGrpcClientSender {
     sendAsync(request: SendGrpcClientRequest): Promise<SendGrpcClientResponse>;
     cancel(): void;
 }
 
-class GrpcCleintSender implements IGrpcCleintSender {
+class GrpcClientSender implements IGrpcClientSender {
     private runTokenSourceList: CancellationTokenSource[] = [];
 
     constructor(
@@ -180,4 +180,4 @@ class GrpcCleintSender implements IGrpcCleintSender {
     }
 }
 
-export const grpcClientSender: IGrpcCleintSender = new GrpcCleintSender(protoLoader, grpcClientFactory);
+export const grpcClientSender: IGrpcClientSender = new GrpcClientSender(protoLoader, grpcClientFactory);
