@@ -2,7 +2,12 @@
   "name": "grpc-mcp",
   "version": "1.0.0",
   "description": "",
-  "main": "index",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": ["grpc", "mcp", "middleware", "typescript", "message-control"],
+  "author": "Yui44",
+  "license": "MIT",
+  "files": ["dist", "README.md", "LICENSE"],
   "type": "module",
   "scripts": {
     "build": "tsc",
@@ -10,9 +15,6 @@
     "prettier:write": "prettier --write -- src/**/*.{ts,tsx}",
     "prettier:check": "prettier --check -- src/**/*.{ts,tsx}"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.9.1",
     "@types/eslint__js": "^8.42.3",
