@@ -135,3 +135,35 @@ npm run build
 npm run lint
 npm run prettier:write
 ```
+
+### 実装例
+```javascript
+// Import loader and client from grpc-mcp library
+import { loader, client } from "grpc-mcp";
+
+async function main() {
+  // Load proto files from the proto directory
+  const protoList = await loader.loadAsync("./proto/");
+  const proto = protoList[0];
+  const service = proto.services[0];
+  const method = service.methods[0];
+
+  // Get method information and print it
+  const info = await loader.getMethodAsync(proto.path, service.name, method);
+  console.log(info);
+
+  // Send a gRPC request and print the response
+  const response = await client.requestAsync({
+    path: proto.path,
+    address: "localhost:6565",
+    service: service.name,
+    method: method,
+    body: JSON.stringify({ key: "value" }),
+    config: { SSL: false },
+  });
+  console.log(response);
+}
+
+main();
+
+```
