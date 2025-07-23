@@ -14,9 +14,8 @@
   "keywords": [
     "grpc",
     "mcp",
-    "middleware",
-    "typescript",
-    "message-control"
+    "protobuf",
+    "typescript"
   ],
   "author": "Yui44",
   "license": "MIT",
