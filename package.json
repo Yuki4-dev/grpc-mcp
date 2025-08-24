@@ -1,6 +1,6 @@
 {
   "name": "grpc-mcp",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "MCP Server For gRPC",
   "repository": {
     "type": "git",
