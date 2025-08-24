@@ -14,6 +14,13 @@ gRPCサーバーへのリクエスト送信や、Protocol Bufferファイルの�
 - 本ツールは gRPC のストリーミング（サーバーストリーミング、クライアントストリーミング、双方向ストリーミング）には対応していません。
   単一リクエスト・単一レスポンス型（Unary）のみサポートしています。
 
+## AI 指示用プロンプト
+
+このリポジトリには、AI に自然言語で操作させるためのプロンプトテンプレートが含まれています。実装や利用手順の自動化に役立つ説明・テンプレートは以下のファイルをご確認ください。
+
+- 英語: [grpc-mcp.prompt.md](https://github.com/Yuki4-dev/grpc-mcp/blob/main/grpc-mcp.prompt.md)
+- 日本語: [grpc-mcp.ja.prompt.md](https://github.com/Yuki4-dev/grpc-mcp/blob/main/grpc-mcp.ja.prompt.md)
+
 ## Usage
 
 ### MCP クライアントからの使用

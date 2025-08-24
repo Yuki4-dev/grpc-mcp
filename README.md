@@ -17,6 +17,13 @@ grpc-mcp is an MCP server built with Node.js/TypeScript. It enables easy gRPC re
 - This tool does NOT support gRPC streaming (server streaming, client streaming, or bidirectional streaming).
   Only single-request single-response (unary) RPCs are supported.
 
+## AI instruction prompts
+
+This repository includes prompt templates to instruct AI agents using natural language. The templates and usage examples help automate gRPC requests and Protocol Buffer handling. See the prompt files below:
+
+- English: [grpc-mcp.prompt.md](https://github.com/Yuki4-dev/grpc-mcp/blob/main/grpc-mcp.prompt.md)
+- Japanese: [grpc-mcp.ja.prompt.md](https://github.com/Yuki4-dev/grpc-mcp/blob/main/grpc-mcp.ja.prompt.md)
+
 ## Usage
 
 ### MCP Client Example
