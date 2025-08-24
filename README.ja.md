@@ -24,7 +24,7 @@ gRPCサーバーへのリクエスト送信や、Protocol Bufferファイルの�
 ## Usage
 
 ### MCP クライアントからの使用
-upxコマンドを使用する場合
+npxコマンドを使用する場合
 ```jsonc
 {
   "servers": {
