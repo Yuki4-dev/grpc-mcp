@@ -1,0 +1,53 @@
+{
+  "name": "grpc-mcp",
+  "version": "1.0.11",
+  "description": "MCP Server For gRPC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yuki4-dev/grpc-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Yuki4-dev/grpc-mcp/issues"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "grpc",
+    "mcp",
+    "protobuf",
+    "typescript"
+  ],
+  "author": "Yuki44",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "type": "module",
+  "bin": {
+    "grpc-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "prettier:write": "prettier --write -- src/**/*.{ts,tsx}",
+    "prettier:check": "prettier --check -- src/**/*.{ts,tsx}"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^24.0.3",
+    "eslint": "^9.2.0",
+    "prettier": "^3.0.3",
+    "prettier-plugin-organize-imports": "^4.0.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.3.0"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.10.7",
+    "@grpc/proto-loader": "^0.7.13",
+    "fastmcp": "^3.3.0",
+    "zod": "^3.25.64"
+  }
+}
