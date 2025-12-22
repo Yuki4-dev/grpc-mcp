@@ -1,6 +1,6 @@
 {
   "name": "grpc-mcp",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "MCP Server For gRPC",
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
     "typescript"
   ],
   "author": "Yuki44",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "files": [
     "dist",
     "README.md",
