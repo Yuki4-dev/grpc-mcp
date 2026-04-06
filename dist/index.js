@@ -7,7 +7,7 @@ import { client } from "./client.js";
 import { loader } from "./loader.js";
 const server = new FastMCP({
     name: "GRPC Client",
-    version: "1.0.0",
+    version: "2.0.0",
 });
 server.addTool({
     name: "sendRequest",

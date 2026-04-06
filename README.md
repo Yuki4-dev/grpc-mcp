@@ -5,10 +5,6 @@
 
 grpc-mcp is an MCP server built with Node.js/TypeScript. It enables easy gRPC requests and Protocol Buffer file information retrieval.
 
-<a href="https://glama.ai/mcp/servers/@Yuki4-dev/grpc-mcp">
-  <img width="380" height="200" src="https://glama.ai/mcp/servers/@Yuki4-dev/grpc-mcp/badge" alt="gRPC Server MCP server" />
-</a>
-
 ## Features
 
 - Retrieve service/method info from Protocol Buffer files
