@@ -1,5 +1,4 @@
 import eslint from "@eslint/js";
-import globals from "globals";
 import tseslint from "typescript-eslint";
 
 export default [
@@ -8,12 +7,6 @@ export default [
         ignores: ["dist/", "node_modules/","**/*.test.ts"],
     },
     {
-        languageOptions: {
-            globals: {
-                ...globals.browser,
-                ...globals.node,
-            },
-        },
         rules: {
             "@typescript-eslint/no-empty-object-type":"off",
             "@typescript-eslint/no-explicit-any": "off",

@@ -9,7 +9,7 @@ import { loader } from "./loader.js";
 
 const server = new FastMCP({
   name: "GRPC Client",
-  version: "1.0.0",
+  version: "2.0.0",
 });
 
 server.addTool({
@@ -19,9 +19,7 @@ server.addTool({
     path: z.string().describe("Path to the proto file (Full path)"),
     address: z
       .string()
-      .describe(
-        "Address of the gRPC server (e.g., localhost:6565)",
-      ),
+      .describe("Address of the gRPC server (e.g., localhost:6565)"),
     service: z.string().describe("Service name (e.g., UserService)"),
     method: z.string().describe("Method name (e.g., GetUser)"),
     body: z.string().describe("Request body in JSON format"),
